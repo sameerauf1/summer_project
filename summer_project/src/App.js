@@ -8,6 +8,7 @@ function App() {
   const addTodo = (e) => {
     //console.log(object)
     setTodos([...todos, input]);
+    setInput("");
   };
   return (
     <div className="app">
