@@ -1,6 +1,6 @@
 import React from "react";
 import ItemDescription from "./ItemDescription";
-import styles from "./Product.modules.css";
+import styles from "./Product.module.css";
 
 function Product({ name, description, price }) {
   return (
