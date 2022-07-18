@@ -1,10 +1,12 @@
 import React from "react";
 import Product from "./Product";
+import styles from "./App.module.css";
 
 function App() {
   return (
     <div>
       <h1> Hello World</h1>
+      <h2 className={styles.error}> An Error has occured </h2>
       <Product
         name="Google Home"
         description="Your Ai Assistant"
