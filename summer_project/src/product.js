@@ -1,7 +1,12 @@
 import React from 'react'
 
-export default function product() {
+function Product(props) {
   return (
-    <div>product</div>
+    <div>
+      <h1> {props.name}</h1>
+      <h2> {props.description}</h2>
+      <h3> ${props.price}</h3>
+    </div>
   )
 }
+export default Product
