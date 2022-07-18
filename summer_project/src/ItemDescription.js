@@ -1,14 +1,14 @@
-import React from "react";
+import React, { Component } from "react";
 
-function ItemDescription({ name, description }) {
-  return (
-    <div>
-      <p> {name}</p>
-      <p>
-        <i> {description} </i>
-      </p>
-    </div>
-  );
+export default class ItemDescription extends Component {
+  render() {
+    return (
+      <div>
+        <p> {this.props.name}</p>
+        <p>
+          <i> {this.props.description} </i>
+        </p>
+      </div>
+    );
+  }
 }
-
-export default ItemDescription;
