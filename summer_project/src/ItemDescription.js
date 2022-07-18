@@ -2,11 +2,12 @@ import React, { Component } from "react";
 
 export default class ItemDescription extends Component {
   render() {
+    const { name, description } = this.props;
     return (
       <div>
-        <p> {this.props.name}</p>
+        <p> {name}</p>
         <p>
-          <i> {this.props.description} </i>
+          <i> {description} </i>
         </p>
       </div>
     );
