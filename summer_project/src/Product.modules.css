@@ -4,7 +4,10 @@
   border: 1px solid red;
 }
 
-.product__error {
+.error {
   color: red;
   font-weight: bolder;
+}
+.price {
+  color: green;
 }
