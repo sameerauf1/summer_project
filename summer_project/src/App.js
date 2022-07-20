@@ -6,19 +6,24 @@ function App() {
   const [input, setInput] = useState("");
 
   const addTodo = (e) => {
+    e.preventDefault(); // prevents referesh
     //console.log(object)
-    setTodos([...todos, input]);
-    setInput("");
+    setTodos([...todos, input]); // adds user input
+    setInput(""); // resets input field
   };
   return (
     <div className="app">
       <h1> Welcome to my TODO List</h1>
-      <input
-        value={input}
-        onChange={(e) => setInput(e.target.value)}
-        type="text"
-      />
-      <button onClick={addTodo}> Add to Do </button>
+      <form>
+        <input
+          value={input}
+          onChange={(e) => setInput(e.target.value)} // keeps track of user input
+          type="text"
+        />
+        <button type="submit" onClick={addTodo}>
+          Add to Do
+        </button>
+      </form>
       <h2> List of Todos</h2>
       {todos.map((todo) => {
         return <p> {todo}</p>;
